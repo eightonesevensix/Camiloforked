@@ -14,6 +14,6 @@ export class DiscordApiService {
 constructor(private http: HttpClient) { }
 
   getDiscordUser(id: string): Observable<Profile> {
-    return this.http.get<Profile>(`${this.urlDiscordApi}user/${id}`);
+    return this.http.get<Profile>(`${this.urlDiscordApi}users/${id}`);
   }
 }
